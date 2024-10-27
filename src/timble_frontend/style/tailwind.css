@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  overflow: hidden;
+}
+
+.scroll-hidden {
+  overflow-y: auto;
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+@media (max-height: 670px) {
+  .check {
+    margin-top: -90px;
+    --tw-scale-x: 0.68;
+    --tw-scale-y: 0.68;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .els {
+    margin-top: -80px;
+  }
+}
+@media (min-height: 730px) {
+  .check {
+    --tw-scale-x: 0.72;
+    --tw-scale-y: 0.72;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .els {
+    margin-top: -60px;
+  }
+}
+@media (min-height: 800px) {
+  .check {
+    --tw-scale-x: 0.83;
+    --tw-scale-y: 0.83;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+      rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+      scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .els {
+    margin-top: -30px;
+  }
+}

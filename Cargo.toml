@@ -1,5 +1,6 @@
 [workspace]
 members = [
-    "src/timble_backend"
+    "src/timble_backend",
+    "src/timble_frontend"
 ]
 resolver = "2"
