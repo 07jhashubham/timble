@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "timble_backend": {
+      "candid": "src/timble_backend/timble_backend.did",
+      "package": "timble_backend",
+      "type": "rust"
+    },
+    "timble_frontend": {
+      "dependencies": [
+        "timble_backend"
+      ],
+      "source": [
+        "src/timble_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
