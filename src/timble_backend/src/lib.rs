@@ -1,9 +1,5 @@
-use std::panic::Location;
-
 use ic_cdk::update;
 use ic_sqlite_features::{Connection, CONN};
-
-
 
 #[update]
 pub fn create_new_user(name: String, age:u16, prof: String, location: String, interest: Vec<String>, about: String, image: Vec<String> ) -> Result<(), String> {

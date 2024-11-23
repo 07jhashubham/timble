@@ -8,7 +8,7 @@ use crate::app::components::bottom::Bottom;
 pub fn HomePage() -> impl IntoView {
     view! {
        <div class="w-full bg-gray-200 flex items-center justify-center">
-        <div class="bg-[#05102E] md:max-w-md md:rounded-2xl w-full h-screen">
+        <div class="bg-[#05102E] md:max-w-md md:rounded-2xl w-full h-screen overflow-y-auto">
             <div class="mx-6">  
                 <Navbar />
                 <All_images />

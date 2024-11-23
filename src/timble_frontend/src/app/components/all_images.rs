@@ -1,5 +1,6 @@
 use leptos::*;
 
+#[allow(dead_code)]
 struct ImageData {
     id: u8,
     url: &'static str,
