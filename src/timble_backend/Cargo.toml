@@ -9,7 +9,12 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-candid = "0.10"
-ic-cdk = "0.13"
-ic-cdk-timers = "0.7" # Feel free to remove this dependency if you don't need timers
-ic-sqlite-features = "0.1.1"
+candid = "0.10.10"
+ic-cdk = "0.17.0"
+ic-cdk-macros = "0.17.0"
+ic-sqlite = "0.1.0"
+reqwest = "0.12.9"
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.133"
+tokio = "1.41.1"
+

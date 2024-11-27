@@ -3,3 +3,7 @@ pub mod navbar;
 pub mod all_images;
 pub mod crisp;
 pub mod bottom;
+pub mod sec_nav;
+pub mod sec_detail;
+pub mod sec_allimg;
+pub mod choose;

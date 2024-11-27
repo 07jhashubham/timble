@@ -1,3 +1,11 @@
-service : {
-    "greet": (text) -> (text) query;
+type Error = variant {
+  CanisterError : record { message : text };
+  InvalidCanister;
+};
+type Gender = variant { Male; Female };
+type Result = variant { Ok : text; Err : Error };
+service : () -> {
+  create_new_user : (text, nat16, Gender, text, opt vec text) -> (Result);
+  get_all_user : () -> (Result) query;
+  greet : (text) -> (text) query;
 }

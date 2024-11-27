@@ -6,12 +6,8 @@
       "type": "rust"
     },
     "timble_frontend": {
-      "dependencies": [
-        "timble_backend"
-      ],
-      "source": [
-        "src/timble_frontend/assets"
-      ],
+      "dependencies": ["timble_backend"],
+      "source": ["src/timble_frontend/public"],
       "type": "assets"
     }
   },

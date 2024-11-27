@@ -29,6 +29,9 @@ body {
   .els {
     margin-top: -80px;
   }
+  .tppsr {
+    margin-bottom: -4.8rem;
+  }
 }
 @media (min-height: 730px) {
   .check {
